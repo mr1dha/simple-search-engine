@@ -75,3 +75,13 @@
 .search-result-item {
     padding: .75rem 0;
 }
+
+.search-result-isi {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp : 3;
+	-webkit-box-orient: vertical;
+	text-align: justify;
+	margin: 0;
+}

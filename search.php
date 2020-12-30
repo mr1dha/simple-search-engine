@@ -44,45 +44,28 @@
 <!-- End Navbar -->
 
 
-<div class="container mt-5">
+<div class="container mt-5 pb-5">
     <div class="row align-items-bottom">
         <div class="col-md-8">
             <h5>Hasil pencarian untuk : <b><?= $q; ?></b></h5>
             <hr class="mb-0">
-            <small class="text-muted">Menampilan 10 hasil pencarian</small>
+            <small class="text-muted">Menampilan <?= count($articles); ?> hasil pencarian</small>
+            <small class="text-muted float-right"><?= $time->waktu ? $time->waktu : "0.00" ?>  detik</small>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8" id="search-result-container">
-            <div class="search-result-item">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
-            </div>
 
-            <div class="search-result-item">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
-            </div>
+           <?php if( count($articles) > 1): ?>
+                <?php foreach($articles as $article): ?>
+                    <div class="search-result-item">
+                        <a href="<?=  $article->url ?>"><?=  $article->judul ?></a>
+                        <p class="search-result-isi small"><?=  $article->isi ?></p>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
 
-            <div class="search-result-item">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
-            </div>
-
-            <div class="search-result-item">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
-            </div>
-
-            <div class="search-result-item">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
-            </div>
-
-            <div class="search-result-item">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
-            </div>
+            <?php endif; ?>
         </div>
     </div>
 </div> 
