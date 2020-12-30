@@ -31,7 +31,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto"></ul>
-        <a href="#"><img src="assets/img/github-icon.png" width="30" height="30" class="d-inline-block align-top"></a>
+        <a href="https://github.com/mr1dha/simple-search-engine" target="_blank"><img src="assets/img/github-icon.png" width="30" height="30" class="d-inline-block align-top">
+        <span class="github-name">mr1dha</span></a>
     </div>
 </div>
 </nav>

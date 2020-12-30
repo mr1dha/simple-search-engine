@@ -58,3 +58,11 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
+.github-name {
+	font-weight: 500;
+	color: var(--my-softblue);
+	line-height: 30px;
+	display: inline-block;
+	margin-left: 5px;
+}
