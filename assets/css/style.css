@@ -1,0 +1,60 @@
+:root {
+        --my-orange : #fec93b;
+        --my-darkblue : #07689f;
+        --my-blue:#40a8c5;
+        --my-lightblue:#a2d5f2;
+        --my-softblue: #29abe2;
+}
+
+ .bg-gradient {
+    background: linear-gradient(35deg, var(--my-blue) 0, var(--my-darkblue) 100%) !important;
+}
+
+.navbar {
+	/*border-bottom: 2px solid var(--my-softblue);*/
+}
+
+.shadow-2 {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27);
+}
+
+#form-seacrh-nav {
+	width: 50%;
+}
+
+#form-seacrh-nav input {
+	width: 80%;
+	border: 1px solid var(--my-softblue) !important;	
+2border: 1px solid var(--my-softblue)
+}
+
+.bg-blue {
+	background: var(--my-softblue) !important;
+	color: white;
+	border: none;
+}
+
+.title {
+	margin-left: .5rem;
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+.navbar-brand {
+	font-weight: 600;
+}
+
+#search-container {
+	height: 50vh;
+}
+
+#search-container input {
+	border: 2px solid var(--my-softblue) !important;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#search-container button {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
