@@ -14,7 +14,7 @@
 <body>
 
     <!-- Begin Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-2 py-3">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="assets/img/search-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -51,7 +51,7 @@
     </div>
 </div> 
 
-<footer class="fixed-bottom text-center py-3">
+<footer class="fixed-bottom text-center py-3 text-muted">
     <span>Copyright &copy; 2021 | Muhammad Ridha</span>    
 </footer>
 
