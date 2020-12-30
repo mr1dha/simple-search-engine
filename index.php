@@ -40,14 +40,17 @@
         <div class="col text-center">
              <img src="assets/img/search-icon.png" width="95" height="95" class="d-inline-block align-top">
              <span class="title">USearch</span>
-
+             <form action="search.php" method="GET">
              <div class="input-group my-3 w-50 mx-auto">
-              <input type="search" class="form-control" placeholder="Enter keyword" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <input type="search" name="q" class="form-control" placeholder="Enter keyword" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary bg-blue" type="button">Search</button>
+                <button class="btn btn-outline-secondary bg-blue" type="submit">Search</button>
                 </div>
             </div>
-
+            <span>Tampilkan sebanyak </span>
+            <input type="text" value="10" style="width: 3rem;" name="n" required>
+            <span>hasil</span>
+            </form>
         </div>
     </div>
 </div> 

@@ -48,7 +48,7 @@
 	height: 50vh;
 }
 
-#search-container input {
+#search-container input[type=search] {
 	border: 2px solid var(--my-softblue) !important;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
@@ -65,4 +65,13 @@
 	line-height: 30px;
 	display: inline-block;
 	margin-left: 5px;
+}
+
+.search-result-item small{
+	display: block !important;
+	text-align: justify;
+}
+
+.search-result-item {
+    padding: .75rem 0;
 }

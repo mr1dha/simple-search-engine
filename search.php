@@ -1,3 +1,8 @@
+<?php 
+    require 'core/engine.php';
+
+ ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,8 +25,8 @@
                 <img src="assets/img/search-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 USearch
             </a>
-            <form class="form-inline my-2 my-lg-0" id="form-seacrh-nav">
-                <input class="form-control mr-sm-2" type="search" placeholder="Enter keyword" aria-label="Search">
+            <form action="" method="GET" class="form-inline my-2 my-lg-0" id="form-seacrh-nav">
+                <input name="q" class="form-control mr-sm-2" type="search" placeholder="Enter keyword" aria-label="Search" value="<?= $q; ?>">
               <button class="btn bg-blue my-2 my-sm-0" type="submit">Search</button>
           </form>
 
@@ -41,8 +46,43 @@
 
 <div class="container mt-5">
     <div class="row align-items-bottom">
-        <div class="col-8">
+        <div class="col-md-8">
+            <h5>Hasil pencarian untuk : <b><?= $q; ?></b></h5>
+            <hr class="mb-0">
+            <small class="text-muted">Menampilan 10 hasil pencarian</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8" id="search-result-container">
+            <div class="search-result-item">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
+            </div>
 
+            <div class="search-result-item">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
+            </div>
+
+            <div class="search-result-item">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
+            </div>
+
+            <div class="search-result-item">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
+            </div>
+
+            <div class="search-result-item">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
+            </div>
+
+            <div class="search-result-item">
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore repudiandae impedit fugit repellat amet quis optio dolore, maiores molestias minima, dignissimos corrupti fuga! Doloribus vero repudiandae adipisci, nulla similique.</small>
+            </div>
         </div>
     </div>
 </div> 
