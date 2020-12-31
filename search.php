@@ -26,13 +26,10 @@
                 USearch
             </a>
             <form action="" method="GET" class="form-inline my-2 my-lg-0" id="form-seacrh-nav">
-                <input name="q" class="form-control mr-sm-2" type="search" placeholder="Enter keyword" aria-label="Search" value="<?= $q; ?>">
+                <input name="q" class="form-control mr-sm-2" id="search-top" type="search" placeholder="Enter keyword" aria-label="Search" value="<?= $q; ?>">
               <button class="btn bg-blue my-2 my-sm-0" type="submit">Search</button>
           </form>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto"></ul>
@@ -49,7 +46,7 @@
         <div class="col-md-8">
             <h5>Hasil pencarian untuk : <b><?= $q; ?></b></h5>
             <hr class="mb-0">
-            <small class="text-muted">Menampilan <?= count($articles); ?> hasil pencarian</small>
+            <small class="text-muted float-left">Menampilan <?= count($articles); ?> hasil pencarian</small>
             <small class="text-muted float-right"><?= $time->waktu ? $time->waktu : "0.00" ?>  detik</small>
         </div>
     </div>

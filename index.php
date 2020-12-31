@@ -21,11 +21,7 @@
                 USearch
             </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto"></ul>
         <a href="https://github.com/mr1dha/simple-search-engine" target="_blank"><img src="assets/img/github-icon.png" width="30" height="30" class="d-inline-block align-top">
         <span class="github-name">mr1dha</span></a>
