@@ -1,0 +1,106 @@
+:root {
+        --my-orange : #fec93b;
+        --my-darkblue : #07689f;
+        --my-blue:#40a8c5;
+        --my-lightblue:#a2d5f2;
+        --my-softblue: #29abe2;
+}
+
+@media (max-width: 768px) {
+	#form-seacrh-nav {
+		width: 100% !important;
+	}
+
+	#search-top {
+		width: 75% !important;
+		margin-right: .25rem;
+	}
+
+	.navbar-brand {
+		text-align: center !important;
+		width: 100% !important;
+	}
+	#search-container .input-group {
+		width: 100% !important;
+	} 
+}
+
+ .bg-gradient {
+    background: linear-gradient(35deg, var(--my-blue) 0, var(--my-darkblue) 100%) !important;
+}
+
+.navbar {
+	/*border-bottom: 2px solid var(--my-softblue);*/
+}
+
+.shadow-2 {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27);
+}
+
+#form-seacrh-nav {
+	width: 50%;
+}
+
+#form-seacrh-nav input {
+	width: 80%;
+	border: 1px solid var(--my-softblue) !important;	
+2border: 1px solid var(--my-softblue)
+}
+
+.bg-blue {
+	background: var(--my-softblue) !important;
+	color: white;
+	border: none;
+}
+
+.title {
+	margin-left: .5rem;
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+.navbar-brand {
+	font-weight: 600;
+}
+
+#search-container {
+	height: 50vh;
+}
+
+#search-container input[type=search] {
+	border: 2px solid var(--my-softblue) !important;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#search-container button {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.github-name {
+	font-weight: 500;
+	color: var(--my-softblue);
+	line-height: 30px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.search-result-item small{
+	display: block !important;
+	text-align: justify;
+}
+
+.search-result-item {
+    padding: .75rem 0;
+}
+
+.search-result-isi {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp : 3;
+	-webkit-box-orient: vertical;
+	text-align: justify;
+	margin: 0;
+}
