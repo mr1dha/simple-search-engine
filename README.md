@@ -25,8 +25,8 @@ Build simple search engine using information retrieval concept.
 
 <ol start="4">
 <li>Run your Web server</li>
-</ol>
 <p>The next step is you need to run your web server such as Apache, Nginx, etc.</p>
+</ol>
 
 <ol start="5">
 <li>Open the website from localhost</li>
